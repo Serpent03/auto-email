@@ -60,6 +60,7 @@ While the event might have concluded, the conversations don't have to end. Stay 
 Did the group discussion inspire you? Do you think your friends missed out on something exceptional? Encourage them to join our future events by sharing your accomplishments on your social media platforms and don’t forget to tag us. Let's build a community of thoughtful individuals who are passionate about making a difference.
 {newline()}
 - Follow us on Instagram <a href="https://www.instagram.com/debsoc_chitkara/">@debsoc_chitkara</a>
+<br>
 - Check out our Linkedin page <a href="https://www.linkedin.com/company/debsoc-cuiet/">@debsoc-cuiet</a>
 {newline()}
 <p>Best regards,</p>
@@ -102,8 +103,8 @@ with open('mail.csv', 'r') as f:
             _email = i[1]
             with open(f"{ticker}.png", "rb") as img:
                 img_binary = img.read()
-                # _send_email(_name, _email, img_binary, f"{ticker}.png")
-                _debug(_name, _email, img_binary, f"{ticker}.png")
+                _send_email(_name, _email, img_binary, f"{ticker}.png")
+                # _debug(_name, _email, img_binary, f"{ticker}.png")
                 img.close()
         except Exception as e:
             print(e)
